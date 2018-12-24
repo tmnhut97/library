@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="15dp"
+    android:background="#edd3d3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/TextViewDialogDeleteName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#2b18b6"
+        android:text="Ten danh muc"/>
+    <TextView
+        android:id="@+id/TextViewDialogDeleteQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:text="Bạn muốn xóa danh mục này ?"/>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+        <Button
+            android:layout_weight="6"
+            android:text="Chắc chắn"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/buttonSubmitDialogDelete"/>
+        <Button
+            android:layout_margin="5dp"
+            android:layout_weight="4"
+            android:text="Hủy"
+            android:background="#aba0a0"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/buttonCannelDialogDelete"/>
+    </LinearLayout>
+</LinearLayout>

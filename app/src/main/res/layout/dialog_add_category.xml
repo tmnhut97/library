@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="15dp"
+    android:background="#edd3d3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="30dp"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ff00"
+        android:hint="Thêm danh mục"/>
+    <EditText
+        android:layout_marginTop="5dp"
+        android:id="@+id/editTextAddCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:background="#fff"
+        android:hint="Nhập tên danh mục"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:id="@+id/editTextAddCategory_er"/>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+        <Button
+            android:layout_weight="6"
+            android:text="Thêm"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/buttonAddCategory"/>
+        <Button
+            android:layout_margin="5dp"
+            android:layout_weight="4"
+            android:text="Hủy"
+            android:background="#aba0a0"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/buttonCannelAddCategory"/>
+    </LinearLayout>
+</LinearLayout>

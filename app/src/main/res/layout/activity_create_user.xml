@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activityCreateBook"
+    android:layout_margin="5dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:background="@color/colorPrimary"
+    tools:context=".CreateUserActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/CircleImageViewCreateAvatarUser"
+        android:layout_width="121dp"
+        android:layout_height="113dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/avateruser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textViewCreateUserUserName"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:paddingLeft="40dp"
+        android:background="#fff"
+        android:backgroundTint="#fff"
+        android:hint="Tên đăng nhập"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CircleImageViewCreateAvatarUser"
+        tools:targetApi="lollipop" />
+
+    <EditText
+        android:id="@+id/textViewCreateUserEmail"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#fff"
+        android:backgroundTint="#fff"
+        android:paddingLeft="40dp"
+        android:hint="Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCreateUserUserName"
+        tools:targetApi="lollipop" />
+
+    <Spinner
+        android:id="@+id/spinnerCreateUserLevel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#fff"
+        android:backgroundTint="#fff"
+        android:paddingLeft="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCreateUserPassWord_re"
+        tools:ignore="UnusedAttribute" />
+
+    <EditText
+        android:id="@+id/textViewCreateUserPassWord"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#fff"
+        android:backgroundTint="#fff"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:paddingLeft="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCreateUserEmail"
+        tools:targetApi="lollipop" />
+
+    <EditText
+        android:id="@+id/textViewCreateUserPassWord_re"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#fff"
+        android:inputType="textPassword"
+        android:backgroundTint="#fff"
+        android:paddingLeft="40dp"
+        android:hint="Nhập lại mật khẩu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCreateUserPassWord"
+        tools:targetApi="lollipop" />
+
+    <!--<EditText-->
+        <!--android:id="@+id/textViewCreateUserCode"-->
+        <!--android:layout_width="174dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:background="#fff"-->
+        <!--android:backgroundTint="#fff"-->
+        <!--android:hint="Nhập mã"-->
+        <!--android:inputType="number"-->
+        <!--android:paddingLeft="40dp"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.0"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/textViewCreateUserPassWord_re"-->
+        <!--tools:targetApi="lollipop" />-->
+
+    <Button
+        android:id="@+id/buttonSelectAvatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_camera"
+        app:layout_constraintBottom_toBottomOf="@+id/CircleImageViewCreateAvatarUser"
+        app:layout_constraintEnd_toEndOf="@+id/CircleImageViewCreateAvatarUser" />
+
+    <Button
+        android:id="@+id/buttonSubmitCreateBook"
+        android:layout_width="178dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#3313ea"
+        android:text="Tạo mới"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCreateUserLevel" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCreateUserUserName"
+        app:layout_constraintStart_toStartOf="@+id/textViewCreateUserUserName"
+        app:layout_constraintTop_toTopOf="@+id/textViewCreateUserUserName"
+        app:srcCompat="@drawable/ic_account"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCreateUserEmail"
+        app:layout_constraintStart_toStartOf="@+id/textViewCreateUserEmail"
+        app:layout_constraintTop_toTopOf="@+id/textViewCreateUserEmail"
+        app:srcCompat="@drawable/ic_email"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCreateUserPassWord"
+        app:layout_constraintStart_toStartOf="@+id/textViewCreateUserPassWord"
+        app:layout_constraintTop_toTopOf="@+id/textViewCreateUserPassWord"
+        app:srcCompat="@drawable/ic_pass"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCreateUserPassWord_re"
+        app:layout_constraintStart_toStartOf="@+id/textViewCreateUserPassWord_re"
+        app:layout_constraintTop_toTopOf="@+id/textViewCreateUserPassWord_re"
+        app:srcCompat="@drawable/ic_pass"
+        tools:ignore="VectorDrawableCompat" />
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinnerCreateUserLevel"
+        app:layout_constraintStart_toStartOf="@+id/spinnerCreateUserLevel"
+        app:layout_constraintTop_toTopOf="@+id/spinnerCreateUserLevel"
+        app:srcCompat="@drawable/ic_perm"
+        tools:ignore="VectorDrawableCompat" />
+
+    <!--<ImageView-->
+        <!--android:id="@+id/imageView8"-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--app:layout_constraintBottom_toBottomOf="@+id/textViewCreateUserCode"-->
+        <!--app:layout_constraintStart_toStartOf="@+id/textViewCreateUserCode"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/textViewCreateUserCode"-->
+        <!--app:srcCompat="@drawable/ic_key"-->
+        <!--tools:ignore="VectorDrawableCompat" />-->
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">library</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <!--Nav-->
+    <string name="category">Danh Mục</string>
+    <string name="book">Sách</string>
+    <string name="user">Người dùng</string>
+    <string name="about">Giới thiệu</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="dialog_message">Bạn muốn đăng xuất ?</string>
+    <string name="question_logout">Bạn muốn đăng xuất</string>
+    <string name="ok">Đồng ý</string>
+    <string name="cancel">Hủy</string>
+    <string name="update">Sửa</string>
+    <string name="delete">Xóa</string>
+    <string name="delete_success">Xóa thành công !</string>
+    <string name="camera">Camera</string>
+    <string name="library_picture">Thư viện ảnh</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="view_list">Xem theo list</string>
+    <string name="view_picture">Xem theo ảnh</string>
+    <string name="permission_3028">Bạn chưa cấp quyền cho ứng dụng của bạn !!</string>
+    <string name="about_us">
+        Đồ án 3: Đề tài quản lí sách thư viện.
+        Giáo viện hướng dẫn: thầy Hồng Thanh Luận
+        Sinh viên thực hiện: Trần Đình Phú
+                             Tô Minh Nhứt
+    </string>
+    <string name="borrow">Mượn sách</string>
+
+</resources>

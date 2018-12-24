@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="15dp"
+    android:layout_marginTop="20dp"
+    android:background="#edd3d3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="30dp"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ff00"
+        android:hint="Thêm sách"/>
+
+    <EditText
+        android:id="@+id/TextViewDialogCreateBookName"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:background="#fff"
+        android:hint="Tên sách"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#e41a1a"
+        android:textSize="15sp"
+        android:id="@+id/TextViewDialogCreateBookName_er"/>
+
+    <EditText
+        android:id="@+id/TextViewDialogCreateAuthor"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:background="#fff"
+        android:hint="Tác giả"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#e41a1a"
+        android:textSize="15sp"
+        android:id="@+id/TextViewDialogCreateAuthor_er"/>
+
+    <ImageView
+        android:id="@+id/ImageViewDialogBookImage"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:src="@drawable/noavatarbook" />
+
+
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+        <Button
+            android:layout_weight="6"
+            android:text="Thêm"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/buttonSubmitDialogCreateBook"/>
+        <Button
+            android:layout_margin="5dp"
+            android:layout_weight="4"
+            android:text="Trở lại"
+            android:background="#aba0a0"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/buttonCannelDialogCreateBook"/>
+    </LinearLayout>
+</LinearLayout>

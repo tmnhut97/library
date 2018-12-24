@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    android:orientation="vertical"
+    android:background="@drawable/backgroup_nav_header">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/CircleImageViewCreateAvatarUser"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/avateruser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNav_UserName"
+        android:layout_width="97dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Ten Nguoi dung"
+        android:textColor="#f3f2f9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CircleImageViewCreateAvatarUser" />
+
+    <TextView
+        android:id="@+id/textViewNav_Email"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="left"
+        android:text="Ten Nguoi dung"
+        android:textColor="#f3f2f9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNav_UserName" />
+
+    <ImageView
+        android:id="@+id/imageViewEditAvatar"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/CircleImageViewCreateAvatarUser"
+        app:layout_constraintEnd_toEndOf="@+id/CircleImageViewCreateAvatarUser"
+        app:srcCompat="@drawable/ic_camera"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imageViewEditUserName"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewNav_UserName"
+        app:layout_constraintTop_toBottomOf="@+id/CircleImageViewCreateAvatarUser"
+        app:srcCompat="@drawable/ic_create_black_24dp" />
+</android.support.constraint.ConstraintLayout>

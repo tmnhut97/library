@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/boder_background"
+    android:layout_marginBottom="2dp"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/ItemImageBook"
+            android:layout_width="60dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/noavatarbook" />
+
+        <TextView
+            android:id="@+id/ItemBookBookName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/ItemImageBook"
+            android:maxLines="1"
+            android:text="Tên sách"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ItemBookAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ItemBookBookName"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/ItemImageBook"
+            android:text="Tác giả" />
+
+        <TextView
+            android:id="@+id/textViewItemBookId"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/EditTextCreateBorrowAddBookQuantity"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="19dp"
+            android:layout_toStartOf="@+id/imageViewRemoveBook"
+            android:layout_toLeftOf="@+id/imageViewRemoveBook"
+            android:background="#fff"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLines="1"
+            android:text="1" />
+
+        <ImageView
+            android:id="@+id/imageViewRemoveBook"
+            android:layout_width="56dp"
+            android:layout_height="46dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="1dp"
+            card_view:srcCompat="@drawable/ic_remove_black"
+            tools:ignore="VectorDrawableCompat" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

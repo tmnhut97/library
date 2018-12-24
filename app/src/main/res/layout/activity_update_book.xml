@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="#edd3d3"
+    android:orientation="vertical"
+    android:id="@+id/activityUpdateBook"
+    tools:context=".Update_BookActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="30dp"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ff00"
+        android:hint="Sửa sách"/>
+
+    <ImageView
+        android:id="@+id/ImageViewUpdateBookImage"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/no_image" />
+
+    <EditText
+        android:id="@+id/TextViewUpdateBookName"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:background="#fff"
+        android:hint="Tên sách"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#e41a1a"
+        android:textSize="15sp"
+        android:id="@+id/TextViewUpdateBookName_er"/>
+
+    <EditText
+        android:id="@+id/TextViewUpdateAuthor"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:background="#fff"
+        android:hint="Tác giả"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#e41a1a"
+        android:textSize="15sp"
+        android:id="@+id/TextViewUpdateAuthor_er"/>
+
+
+    <Button
+        android:id="@+id/buttonSubmitUpdateBook"
+        android:layout_width="252dp"
+        android:layout_height="37dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Thay đổi" />
+
+
+</LinearLayout>

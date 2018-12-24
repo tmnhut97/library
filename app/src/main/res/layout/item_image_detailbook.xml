@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/boder_background"
+        android:layout_marginBottom="2dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="4dp">
+    <ImageView
+        android:layout_height="160dp"
+        android:layout_width="130dp"
+        android:layout_marginRight="5dp"
+        android:padding="10dp"
+        android:id="@+id/ImageViewImageDetailBook"
+        android:src="@drawable/noavatarbook"
+        android:scaleType="fitXY"
+        />
+
+        <ImageView
+            android:id="@+id/imageViewDeleteItemBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/ic_delete_x"
+            tools:ignore="VectorDrawableCompat" />
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
